@@ -1,0 +1,53 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Joshua oluyemi</h1>
+      <p>Frontend Web Developer</p>
+      <nav>
+        <a href="Home.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="project.html" target="_blank">Projects</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="status"></p>
+    </div>
+  </section>
+<p style="text-align: center; font-size: large;">or</p>
+<h2> contact me</h2>
+<p style="text-align: center; font-size: large;"> Email:Joshuaoluyemi@gmail.com</p>
+<p style="text-align: center; font-size: large;">phone:09011680342</p>
+
+  <footer style="text-align: center; font-size: large;">
+    <p>&copy; 2025 Joshua oluyemi</p>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("status").textContent = "Thank you! Your message has been sent.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
